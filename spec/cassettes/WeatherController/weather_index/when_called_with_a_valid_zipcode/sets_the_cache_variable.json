@@ -1,0 +1,69 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.openweathermap.org/data/2.5/weather?appid=c4ca25f798009c8eb72d9da4093f0b44&units=imperial&zip=22102,US",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json; charset=utf-8"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "User-Agent": [
+            "OpenWeather Ruby Client/0.4.0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "openresty"
+          ],
+          "Date": [
+            "Sun, 04 Feb 2024 00:08:02 GMT"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Content-Length": [
+            "463"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Cache-Key": [
+            "/data/2.5/weather?units=imperial&zip=22102%2cus"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Access-Control-Allow-Credentials": [
+            "true"
+          ],
+          "Access-Control-Allow-Methods": [
+            "GET, POST"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"coord\":{\"lon\":-77.2295,\"lat\":38.953},\"weather\":[{\"id\":800,\"main\":\"Clear\",\"description\":\"clear sky\",\"icon\":\"01n\"}],\"base\":\"stations\",\"main\":{\"temp\":40.12,\"feels_like\":38.01,\"temp_min\":35.11,\"temp_max\":44.22,\"pressure\":1017,\"humidity\":60},\"visibility\":10000,\"wind\":{\"speed\":3.44,\"deg\":340},\"clouds\":{\"all\":0},\"dt\":1707005282,\"sys\":{\"type\":2,\"id\":2080622,\"country\":\"US\",\"sunrise\":1706962436,\"sunset\":1706999483},\"timezone\":-18000,\"id\":0,\"name\":\"Mc Lean\",\"cod\":200}"
+        }
+      },
+      "recorded_at": "Sun, 04 Feb 2024 00:08:02 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}

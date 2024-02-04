@@ -1,0 +1,69 @@
+{
+  "http_interactions": [
+    {
+      "request": {
+        "method": "get",
+        "uri": "https://api.openweathermap.org/data/2.5/weather?appid=c4ca25f798009c8eb72d9da4093f0b44&units=imperial&zip=95014,US",
+        "body": {
+          "encoding": "US-ASCII",
+          "string": ""
+        },
+        "headers": {
+          "Accept": [
+            "application/json; charset=utf-8"
+          ],
+          "Content-Type": [
+            "application/json"
+          ],
+          "User-Agent": [
+            "OpenWeather Ruby Client/0.4.0"
+          ],
+          "Accept-Encoding": [
+            "gzip;q=1.0,deflate;q=0.6,identity;q=0.3"
+          ]
+        }
+      },
+      "response": {
+        "status": {
+          "code": 200,
+          "message": "OK"
+        },
+        "headers": {
+          "Server": [
+            "openresty"
+          ],
+          "Date": [
+            "Sun, 04 Feb 2024 00:08:02 GMT"
+          ],
+          "Content-Type": [
+            "application/json; charset=utf-8"
+          ],
+          "Content-Length": [
+            "475"
+          ],
+          "Connection": [
+            "keep-alive"
+          ],
+          "X-Cache-Key": [
+            "/data/2.5/weather?units=imperial&zip=95014%2cus"
+          ],
+          "Access-Control-Allow-Origin": [
+            "*"
+          ],
+          "Access-Control-Allow-Credentials": [
+            "true"
+          ],
+          "Access-Control-Allow-Methods": [
+            "GET, POST"
+          ]
+        },
+        "body": {
+          "encoding": "UTF-8",
+          "string": "{\"coord\":{\"lon\":-122.0449,\"lat\":37.318},\"weather\":[{\"id\":804,\"main\":\"Clouds\",\"description\":\"overcast clouds\",\"icon\":\"04d\"}],\"base\":\"stations\",\"main\":{\"temp\":53.83,\"feels_like\":51.93,\"temp_min\":49.71,\"temp_max\":56.28,\"pressure\":1012,\"humidity\":64},\"visibility\":10000,\"wind\":{\"speed\":11.5,\"deg\":150},\"clouds\":{\"all\":100},\"dt\":1707004688,\"sys\":{\"type\":2,\"id\":2003278,\"country\":\"US\",\"sunrise\":1706972998,\"sunset\":1707010435},\"timezone\":-28800,\"id\":0,\"name\":\"Cupertino\",\"cod\":200}"
+        }
+      },
+      "recorded_at": "Sun, 04 Feb 2024 00:08:02 GMT"
+    }
+  ],
+  "recorded_with": "VCR 6.2.0"
+}
